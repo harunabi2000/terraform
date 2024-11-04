@@ -1,0 +1,4 @@
+[default]
+35.179.107.35 ansible_ssh_private_key_file=/home/harun/projects/terraform/ansible.pem
+35.176.203.27 ansible_ssh_private_key_file=/home/harun/projects/terraform/ansible.pem
+18.171.241.16 ansible_ssh_private_key_file=/home/harun/projects/terraform/ansible.pem

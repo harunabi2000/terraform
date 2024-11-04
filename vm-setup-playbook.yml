@@ -1,0 +1,23 @@
+---
+- name: Install BASH script Ansible playbook
+  hosts: all
+  remote_user: ubuntu
+  become: yes
+
+  tasks:
+    - name: Installing packages for Python environment
+      apt:
+        name:
+          - python3-pip
+        update_cache: yes
+
+    - name: Creates directory
+      file:
+        path: /home/ubuntu/basic-http-server  # Absolute path for the directory
+        state: directory
+
+    - name: Install Apache2
+      apt:
+        name: apache2
+        update_cache: yes
+        state: latest
